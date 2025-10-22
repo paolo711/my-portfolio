@@ -7,7 +7,7 @@ const projects = [
     description: "A simple yet powerful tool designed to help farmers stay informed about real-time market prices for their crops. With Anisave, every Filipino farmer gains a partner in achieving a more secure and profitable harvest.",
     image: "/anisave.jpg",
     tags: ["React", "TailwindCSS"],
-    demoUrl: "https://anisave.vercel.app/landing",
+    demoUrl: "",
     githubUrl: "#",
   },
   {
