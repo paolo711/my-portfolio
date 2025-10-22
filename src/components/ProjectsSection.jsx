@@ -3,31 +3,21 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
+    title: "Anisave",
+    description: "A simple yet powerful tool designed to help farmers stay informed about real-time market prices for their crops. With Anisave, every Filipino farmer gains a partner in achieving a more secure and profitable harvest.",
+    image: "/anisave.jpg",
+    tags: ["React", "TailwindCSS"],
+    demoUrl: "https://anisave.vercel.app/landing",
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Davoice",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 3,
-    title: "E-commerce Platform",
-    description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
+      "Elevate your product experience with actionable insights. Our platform makes gathering and analyzing feedback simple, elegant, and powerfully effective..",
+    image: "/davoice.jpg",
+    tags: ["Figma", "React", "Vite"],
+    demoUrl: "https://www.figma.com/design/IVKCZ14HB71CIGtx8yDybR/Davoice?node-id=1023-16&p=f&t=IttFrmqToneGaaRp-0",
     githubUrl: "#",
   },
 ];
@@ -42,15 +32,14 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+        Recent works that highlight my focus on clean design, smooth performance, and intuitive user interaction.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover max-w-sm"
             >
               <div className="h-48 overflow-hidden">
                 <img
@@ -63,7 +52,7 @@ export const ProjectsSection = () => {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                    <span key={tag} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                       {tag}
                     </span>
                   ))}
@@ -100,7 +89,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/paolo711"
           >
             Check My Github <ArrowRight size={16} />
           </a>
