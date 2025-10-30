@@ -5,9 +5,9 @@ const projects = [
     id: 1,
     title: "Anisave",
     description: "A simple yet powerful tool designed to help farmers stay informed about real-time market prices for their crops. With Anisave, every Filipino farmer gains a partner in achieving a more secure and profitable harvest.",
-    image: "/anisave.jpg",
+    image: "/projects/anisave.png",
     tags: ["React", "TailwindCSS"],
-    demoUrl: "",
+    demoUrl: "https://anisave.vercel.app/",
     githubUrl: "#",
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     title: "Davoice",
     description:
       "Elevate your product experience with actionable insights. Our platform makes gathering and analyzing feedback simple, elegant, and powerfully effective..",
-    image: "/davoice.jpg",
+    image: "/projects/davoice.png",
     tags: ["Figma", "React", "Vite"],
     demoUrl: "https://www.figma.com/design/IVKCZ14HB71CIGtx8yDybR/Davoice?node-id=1023-16&p=f&t=IttFrmqToneGaaRp-0",
     githubUrl: "#",

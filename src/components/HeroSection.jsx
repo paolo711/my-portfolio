@@ -1,4 +1,5 @@
 import { ArrowDown } from "lucide-react";
+import paolo1 from "/src/paolo1.png";
 
 export const HeroSection = () => {
   return (
@@ -8,6 +9,13 @@ export const HeroSection = () => {
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
+          <div className="flex justify-center">
+            <img
+              src={paolo1}
+              alt="Paolo John Latorilla"
+              className="w-48 h-48 rounded-full object-cover"
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
